@@ -21,7 +21,7 @@ jobs:
           GLADOS: ${{ secrets.GLADOS2 }}
           NOTIFY: ${{ secrets.NOTIFY }}
           # 126.com 
-  run2:
+  run2: 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
