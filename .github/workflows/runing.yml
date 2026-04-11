@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   keepalive-job:
-    name: Keepalive Workflow
+    name: running Workflow
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
