@@ -15,6 +15,15 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
+      
+      - name: Random delay (1 minute to 2 hours)
+        run: |
+          MIN=60
+          MAX=7200
+          DELAY=$(( RANDOM % (MAX - MIN + 1) + MIN ))
+          echo "Sleeping for $DELAY seconds ($((DELAY/60)) minutes)"
+          sleep $DELAY
+      
       - run: npm run main
         env:
           GLADOS: ${{ secrets.RAILGUN163 }}
