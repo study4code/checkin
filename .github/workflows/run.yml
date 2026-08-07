@@ -23,7 +23,7 @@ jobs:
           DELAY=$(( RANDOM % (MAX - MIN + 1) + MIN ))
           echo "Sleeping for $DELAY seconds ($((DELAY/60)) minutes)"
           sleep $DELAY
-      
+       
       - run: npm run main
         env:
           GLADOS: ${{ secrets.RAILGUN163 }}
