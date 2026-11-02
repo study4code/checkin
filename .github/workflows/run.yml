@@ -21,7 +21,7 @@ jobs:
           MIN=60
           MAX=6666
           DELAY=$(( RANDOM % (MAX - MIN + 1) + MIN ))
-          echo "Sleeping for $DELAY seconds ($((DELAY/60)) minutes)"
+          echo "Sleeping for $DELAY seconds ($((DELAY/60)) minutes)" 
           sleep $DELAY
         
       - run: npm run main
