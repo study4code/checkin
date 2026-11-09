@@ -17,7 +17,7 @@ jobs:
       - run: npm ci
       
       - name: Random delay (1 minute to 2 hours)
-        run: |
+        run:
           MIN=60
           MAX=6666
           DELAY=$(( RANDOM % (MAX - MIN + 1) + MIN ))
